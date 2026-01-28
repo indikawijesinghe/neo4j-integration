@@ -1,0 +1,17 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    name: neo4j-integration
+
+  neo4j:
+    uri: bolt://localhost:7687
+    authentication:
+      username: neo4j
+      password: 12345678
+
+logging:
+  level:
+    org.springframework.data.neo4j: DEBUG
+    org.neo4j.driver: INFO
